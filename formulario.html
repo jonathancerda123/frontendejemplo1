@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <!-- form:get, se ve la informacion en la url -->
+    <!-- form:post,  -->
+    <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" required placeholder="Nombre Apellido" name="nombre" id="nombre">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" min="0" max="130" id="edad">
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña">
+        <br>
+        <label for="correo">Correo Electronico</label>
+        <input type="email" required name="correo" id="correo">
+        <br>
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais">
+            <option value="">[seleccione un pais]</option>
+            <optgroup label="America">
+                <option value="1">Chile</option>
+                <option value="2">Colombia</option>
+                <option value="3">Peru</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="4">España</option>
+                <option value="5">Potugal</option>
+                <option value="6">Italia</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+    </form>
+    <a href="index.html">Volver</a>
+</body>
+</html>
